@@ -11,6 +11,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co', // আগেরটি
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co.com', // আপনার এরর মেসেজ অনুযায়ী এটি যোগ করুন
+      },
     ],
   },
   /* config options here */
