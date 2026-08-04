@@ -29,28 +29,28 @@ const Licensing = () => {
     },
   ];
 
-  // ২০টি নির্দিষ্ট প্রোডাক্টের লিস্ট (আলাদা আলাদা ইমেজ লিংক সহ)
+  // ২০টি প্রোডাক্টের লিস্ট (গ্যাজেট, ঘড়ি এবং এখন প্রিমিয়াম গার্মেন্টস সহ)
   const products = [
     { id: 1, brand: "Rolex", name: "Submariner Date", img: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=800" },
     { id: 2, brand: "Apple", name: "iPhone 15 Pro", img: "https://i.ibb.co.com/RpNZ6p24/pexels-japy-34018284.jpg" },
-    { id: 3, brand: "Sony", name: "WH-1000XM5", img: "https://images.unsplash.com/photo-1618366712277-70778c392810?q=80&w=800" },
-    { id: 4, brand: "Nike", name: "Air Jordan 1", img: "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800" },
+    { id: 3, brand: "Garment Elite", name: "Tailored Business Suit", img: "https://images.unsplash.com/photo-1594932224828-b4b057bfe4f0?q=80&w=800" },
+    { id: 4, brand: "Nike", name: "Tech Fleece Jacket", img: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=800" },
     { id: 5, brand: "Leica", name: "M11 Camera", img: "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?q=80&w=800" },
-    { id: 6, brand: "Dior", name: "Sauvage Elixir", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800" },
+    { id: 6, brand: "Classic Wear", name: "Oxford Cotton Shirt", img: "https://images.unsplash.com/photo-1598033129183-c4f50c7176c8?q=80&w=800" },
     { id: 7, brand: "Bose", name: "SoundLink Revolve", img: "https://images.unsplash.com/photo-1608156639585-3400c58e0c9c?q=80&w=800" },
-    { id: 8, brand: "Ray-Ban", name: "Aviator Classic", img: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=800" },
+    { id: 8, brand: "Urban Denim", name: "Selvedge Denim Jacket", img: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?q=80&w=800" },
     { id: 9, brand: "Samsung", name: "Galaxy Watch 6", img: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800" },
     { id: 10, brand: "Gucci", name: "Leather Belt", img: "https://images.unsplash.com/photo-1624222247344-550fb8ec5521?q=80&w=800" },
-    { id: 11, brand: "Canon", name: "EOS R5", img: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800" },
+    { id: 11, brand: "Luxe Knit", name: "Cashmere Crewneck", img: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800" },
     { id: 12, brand: "Adidas", name: "Ultraboost Light", img: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?q=80&w=800" },
     { id: 13, brand: "Fossil", name: "Grant Chronograph", img: "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?q=80&w=800" },
-    { id: 14, brand: "Microsoft", name: "Surface Laptop 5", img: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=800" },
+    { id: 14, brand: "Modern Tailor", name: "Wool Blend Overcoat", img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800" },
     { id: 15, brand: "Montblanc", name: "Meisterstück Pen", img: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?q=80&w=800" },
     { id: 16, brand: "Prada", name: "Saffiano Wallet", img: "https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=800" },
-    { id: 17, brand: "Dell", name: "XPS 13 OLED", img: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=800" },
+    { id: 17, brand: "Essential Tee", name: "Pima Cotton T-Shirt", img: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800" },
     { id: 18, brand: "Beats", name: "Studio Buds", img: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800" },
     { id: 19, brand: "Omega", name: "Speedmaster", img: "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?q=80&w=800" },
-    { id: 20, brand: "GoPro", name: "HERO 12 Black", img: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=800" },
+    { id: 20, brand: "Sport Fit", name: "Performance Hoodie", img: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=800" },
   ];
 
   return (
@@ -99,7 +99,7 @@ const Licensing = () => {
           ))}
         </div>
 
-        {/* Product Portfolio Section (New) */}
+        {/* Product Portfolio Section */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-10">
             <h3 className="text-2xl uppercase tracking-widest font-light">Authorized Product Portfolio</h3>
@@ -115,7 +115,7 @@ const Licensing = () => {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="relative aspect-[3/4] w-full overflow-hidden bg-neutral-100 mb-4">
+                <div className="relative aspect-[3/4] w-full overflow-hidden bg-neutral-100 mb-4 shadow-sm">
                   <Image
                     src={product.img}
                     alt={product.name}

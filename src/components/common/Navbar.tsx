@@ -39,7 +39,7 @@ const Navbar = () => {
 
             {/* লোগো সেকশন - তোমার দেওয়া পজিশন অনুযায়ী */}
             <Link href="/" className="flex items-center gap-3 md:gap-5 group">
-              <div className="relative w-20 h-20 md:w-44 md:h-44 transition-transform group-hover:scale-105 translate-x-8 translate-y-0.5 md:translate-x-14 md:translate-y-1">
+              <div className="relative w-20 h-20 md:w-44 md:h-44 transition-transform group-hover:scale-105 translate-x-8 translate-y-0.3 md:translate-y-1 md:translate-x-14">
                 <Image
                   src="/logo.png" 
                   alt="Manhattan Logo"
