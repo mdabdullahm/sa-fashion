@@ -1,5 +1,5 @@
-import BrandsGrid from "@/components/brands/BrandsGrid";
 import AboutSection from "@/components/home/AboutSection";
+import Brands from "@/components/home/Brands";
 import CTA from "@/components/home/CTA";
 import Heritage from "@/components/home/Heritage";
 import Hero from "@/components/home/Hero";
@@ -12,7 +12,7 @@ export default function Home() {
       <Heritage/>
       <AboutSection/>
       <Licensing/>
-      <BrandsGrid/>
+      <Brands/>
       <CTA/>
     </main>
   );
