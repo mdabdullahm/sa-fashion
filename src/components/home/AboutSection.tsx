@@ -44,7 +44,7 @@ const AboutSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl md:text-4xl font-serif text-gray-900 leading-tight"
             >
-              Manhattan International is an industry-leading distributor of premium apparel, 
+              Sa Fashion International is an industry-leading distributor of premium apparel, 
               with a strong presence in the North American and International market since 1992.
             </motion.p>
 

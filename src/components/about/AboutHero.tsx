@@ -20,7 +20,7 @@ const AboutHero = () => {
             src="https://i.ibb.co.com/nszcd6L9/young-stylish-hipster-couple-love-walking-with-dog-countryside.jpg"
             alt="Manhattan Heritage Models"
             fill
-            className="object-cover transition-transform duration-[3000ms] hover:scale-105"
+            className="object-contain transition-transform duration-[3000ms] hover:scale-105"
             priority
           />
           {/* হালকা ওভারলে */}
@@ -48,7 +48,7 @@ const AboutHero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-4xl font-serif text-gray-900 leading-[1.2] tracking-tight"
           >
-            Manhattan International is an industry-leading distributor of premium apparel, with a strong presence in the North American and International market since 1992.
+            Sa Fashion International is an industry-leading distributor of premium apparel, with a strong presence in the North American and International market since 1992.
           </motion.p>
 
           <motion.div

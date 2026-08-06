@@ -60,7 +60,7 @@ const BrandsGrid = () => {
             Discover Our <br /> 
             <span className="font-serif italic text-neutral-400">Brands</span>
           </h1>
-          <span>Manhattan International offers a complete solution for brands who wish to enter the North American market, with everything under one roof.</span>
+          <span>Sa Fashion International offers a complete solution for brands who wish to enter the North American market, with everything under one roof.</span>
           <div className="w-24 h-[1.5px] bg-black mt-8"></div>
         </div>
 

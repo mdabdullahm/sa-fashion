@@ -26,7 +26,7 @@ const Heritage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-8 text-lg md:text-2xl text-gray-700 font-serif leading-relaxed max-w-4xl italic"
           >
-            Manhattan International remains dedicated to crafting opportunities that inspire, 
+            Sa Fashion International remains dedicated to crafting opportunities that inspire, 
             innovate, drive trends, and celebrate the richness of global fashion.
           </motion.p>
         </div>
