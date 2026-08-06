@@ -1,47 +1,16 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
-
-// কাউন্টার কম্পোনেন্ট (০ থেকে কাউন্ট করার জন্য)
-const Counter = ({ value, suffix = "" }: { value: number; suffix?: string }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // একবার ভিউতে আসলে অ্যানিমেশন শুরু হবে
-  
-  const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, {
-    damping: 30,
-    stiffness: 100,
-  });
-
-  const [displayValue, setDisplayValue] = useState(0);
-
-  useEffect(() => {
-    if (isInView) {
-      motionValue.set(value);
-    }
-  }, [isInView, value, motionValue]);
-
-  useEffect(() => {
-    return springValue.on("change", (latest) => {
-      setDisplayValue(Math.round(latest));
-    });
-  }, [springValue]);
-
-  return (
-    <span ref={ref} className="text-5xl font-light mb-2 block">
-      {displayValue}{suffix}
-    </span>
-  );
-};
+import { motion, AnimatePresence } from "framer-motion";
 
 const AboutSection = () => {
+  // ভিডিওর মতো বড় সিনেমাটিক ইমেজের স্লাইডার
   const sliderImages = [
-    "/about-img/about-1.jpg",
-    "/about-img/about-2.jpg",
-    "/about-img/about-3.jpg",
-    "/about-img/about-4.jpg",
+    "https://images.unsplash.com/photo-1582552938357-32b906df40cb?q=80&w=2000", // Denim Fashion
+    "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2000", // Professional Apparel
+    "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2000", // Fashion Showroom
+    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2000", // Clothing Store
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,112 +18,85 @@ const AboutSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [sliderImages.length]);
 
-  const pillars = [
-    {
-      title: "Global Sourcing",
-      description: "We partner with premium manufacturers across Europe, Asia, and America to source the finest products.",
-    },
-    {
-      title: "Quality Assurance",
-      description: "Every product in our catalog undergoes a rigorous multi-stage quality check to ensure international standards.",
-    },
-    {
-      title: "Fast Distribution",
-      description: "Our robust supply chain management ensures that products reach our clients safely and on schedule.",
-    },
-  ];
-
   return (
-    <section className="w-full bg-neutral-50 py-20 md:py-32">
+    <section className="w-full bg-white py-10 md:py-10">
       <div className="max-w-full mx-auto px-4 md:px-8">
         
-        {/* Header Section */}
-        <div className="flex flex-col md:flex-row gap-12 mb-20 items-start">
-          <div className="md:w-1/2">
-            <span className="text-xs uppercase tracking-[0.4em] text-gray-500 font-semibold mb-4 block">
-              Who We Are
-            </span>
-            <h2 className="text-4xl md:text-6xl font-light uppercase tracking-tighter text-black leading-tight">
-              A Global Leader in <br /> 
-              <span className="font-serif italic text-gray-800">Product Distribution</span>
-            </h2>
-          </div>
-          
-          <div className="md:w-1/2 md:pt-16">
-            <p className="text-xl text-gray-600 font-serif leading-relaxed italic border-l-2 border-gray-300 pl-6">
-              Manhattan was established to simplify global commerce. We bridge the gap between world-class brands and the local marketplace, ensuring authenticity and excellence in every transaction.
-            </p>
-          </div>
-        </div>
+        {/* ভিডিওর মতো সেন্ট্রাল হেডার সেকশন */}
+        <div className="flex flex-col items-center text-center mb-16 md:mb-24">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-5xl md:text-7xl font-serif text-black mb-12"
+          >
+            About Us
+          </motion.h2>
 
-        {/* Image Slider & Animated Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-20">
-          
-          {/* Slider */}
-          <div className="md:col-span-8 relative h-[350px] md:h-[550px] overflow-hidden group shadow-lg">
-            {sliderImages.map((img, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: index === currentIndex ? 1 : 0 }}
-                transition={{ duration: 1 }}
-                className="absolute inset-0"
-              >
-                <Image
-                  src={img}
-                  alt={`Slide ${index + 1}`}
-                  fill
-                  className="object-cover grayscale transition-all duration-700 hover:grayscale-0"
-                />
-              </motion.div>
-            ))}
-            <div className="absolute bottom-4 left-4 flex gap-2 z-10">
-              {sliderImages.map((_, i) => (
-                <div key={i} className={`h-1 transition-all duration-300 ${i === currentIndex ? "w-8 bg-white" : "w-2 bg-white/50"}`} />
-              ))}
-            </div>
-          </div>
-
-          {/* পরিসংখ্যান বক্স (অ্যানিমেশন সহ) */}
-          <div className="md:col-span-4 bg-black text-white p-12 flex flex-col justify-center space-y-12">
-            <div>
-              <Counter value={50} suffix="+" />
-              <p className="uppercase tracking-widest text-sm text-gray-400">Global Brand Partners</p>
-            </div>
-            <div>
-              <Counter value={12} suffix="+" />
-              <p className="uppercase tracking-widest text-sm text-gray-400">Countries Sourced</p>
-            </div>
-            <div>
-              <Counter value={250} suffix="k+" />
-              <p className="uppercase tracking-widest text-sm text-gray-400">Products Delivered</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Pillars Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-gray-200 pt-16">
-          {pillars.map((pillar, index) => (
-            <motion.div 
-              key={index} 
+          <div className="max-w-4xl space-y-10">
+            <motion.p 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              className="space-y-4 group"
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-xl md:text-4xl font-serif text-gray-900 leading-tight"
             >
-              <span className="text-black font-bold text-lg inline-block border-b-2 border-black mb-2">0{index + 1}.</span>
-              <h4 className="text-2xl uppercase tracking-widest font-light group-hover:text-gray-600 transition-colors">
-                {pillar.title}
-              </h4>
-              <p className="text-gray-600 leading-relaxed font-serif text-lg">
-                {pillar.description}
+              Manhattan International is an industry-leading distributor of premium apparel, 
+              with a strong presence in the North American and International market since 1992.
+            </motion.p>
+
+            <motion.div 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="space-y-6 text-lg md:text-xl text-gray-500 font-serif leading-relaxed max-w-3xl mx-auto"
+            >
+              <p>
+                With over 30 years of experience in International and North American distribution, 
+                our portfolio has expanded to include in-house design and product development, 
+                building custom-made solutions that resonates with today’s diverse customers.
+              </p>
+              <p className="italic">
+                Every thread tells a story of collaboration, creativity, and community. <br />
+                We remain open to exploring new business opportunities.
               </p>
             </motion.div>
-          ))}
+          </div>
+        </div>
+
+        {/* সিনেমাটিক ফুল-উইডথ ইমেজ স্লাইডার */}
+        <div className="relative w-full h-[400px] md:h-[800px] overflow-hidden bg-neutral-100">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={sliderImages[currentIndex]}
+                alt="Manhattan Heritage"
+                fill
+                className="object-cover transition-transform duration-[4000ms] scale-110 hover:scale-100"
+                priority
+              />
+            </motion.div>
+          </AnimatePresence>
+
+          {/* স্লাইডার কন্ট্রোল ইন্ডিকেটর */}
+          <div className="absolute bottom-10 left-10 flex gap-4 z-20">
+             {sliderImages.map((_, i) => (
+                <div 
+                  key={i} 
+                  className={`h-[2px] transition-all duration-500 ${i === currentIndex ? "w-12 bg-white" : "w-6 bg-white/30"}`} 
+                />
+             ))}
+          </div>
         </div>
 
       </div>
