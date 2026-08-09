@@ -40,10 +40,10 @@ const Heritage = () => {
         >
           <Image
             // ভিডিওর মতো ম্যানহাটন ব্রিজের সিনেমাটিক ছবি
-            src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?q=80&w=2000" 
+            src="https://i.ibb.co.com/3ykqkTVs/perplexed-lady-model-short-blue-dress-hat-barfoot-white.jpg" 
             alt="Manhattan Distributing Heritage"
             fill
-            className="object-cover grayscale hover:grayscale-0 transition-all duration-1000 cursor-pointer"
+            className="object-cover  hover:grayscale-0 transition-all duration-1000 cursor-pointer"
           />
           {/* হালকা ওভারলে */}
           <div className="absolute inset-0 bg-black/5 pointer-events-none"></div>

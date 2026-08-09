@@ -25,7 +25,7 @@ const Footer = () => {
           </Link>
 
           <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            {["Home", "About Us", "Brands", "Licensing", "Careers", "Contact"].map((item) => (
+            {["Home", "About Us", "Brands", "Contact"].map((item) => (
               <Link 
                 key={item} 
                 href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
