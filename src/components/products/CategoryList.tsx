@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 const CategoryList = () => {
   // ২০টি ব্র্যান্ডের অধীনে ৪০টি ক্যাটাগরির ডাটা
   const categories = [
-    { id: 1, brand: "Manhattan Elite", name: "Premium Suits", img: "https://images.unsplash.com/photo-1594932224828-b4b057bfe4f0?q=80&w=600" },
+    { id: 1, brand: "Manhattan Elite", name: "Premium Suits", img: "https://i.ibb.co.com/bgFphtST/download.jpg" },
     { id: 2, brand: "Urban Aura", name: "Slim Fit Denim", img: "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=600" },
     { id: 3, brand: "Velvet Vogue", name: "Evening Gowns", img: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=600" },
-    { id: 4, brand: "Classic Wear", name: "Oxford Shirts", img: "https://images.unsplash.com/photo-1598033129183-c4f50c7176c8?q=80&w=600" },
+    { id: 4, brand: "Classic Wear", name: "Oxford Shirts", img: "https://i.ibb.co.com/mC587J3y/Fall-2025-Business-Casual-Fashion-Inspiration-for-Women.jpg" },
     { id: 5, brand: "Active Life", name: "Performance Leggings", img: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?q=80&w=600" },
     { id: 6, brand: "Heritage Kids", name: "Cotton Rompers", img: "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?q=80&w=600" },
     { id: 7, brand: "Winter Luxe", name: "Cashmere Sweaters", img: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600" },
@@ -19,7 +19,7 @@ const CategoryList = () => {
     { id: 10, brand: "Denim District", name: "Straight Cut Jeans", img: "https://images.unsplash.com/photo-1582552938357-32b906df40cb?q=80&w=600" },
     { id: 11, brand: "Silk & Satin", name: "Silk Blouses", img: "https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=600" },
     { id: 12, brand: "Urban Aura", name: "Bomber Jackets", img: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=600" },
-    { id: 13, brand: "Modern Tailor", name: "Tuxedos", img: "https://images.unsplash.com/photo-1555069514-3860017abc92?q=80&w=600" },
+    { id: 13, brand: "Modern Tailor", name: "Tuxedos", img: "https://i.ibb.co.com/m5ndnfDQ/image.jpg" },
     { id: 14, brand: "Active Life", name: "Sports Bras", img: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=600" },
     { id: 15, brand: "Heritage Kids", name: "Pinafore Dresses", img: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?q=80&w=600" },
     { id: 16, brand: "Luxe Apparel", name: "Wool Overcoats", img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=600" },

@@ -44,8 +44,8 @@ const Footer = () => {
           <div className="text-center md:text-left space-y-4">
             <h4 className="text-xs uppercase tracking-[0.3em] font-bold text-black">Office</h4>
             <p className="text-gray-500 font-serif leading-relaxed italic">
-              123 Fashion Avenue, Suite 500 <br />
-              New York, NY 10001, USA
+              Dhaka head office <br />
+              ecb chottor 
             </p>
           </div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
             <h4 className="text-xs uppercase tracking-[0.3em] font-bold text-black">Inquiries</h4>
             <p className="text-gray-500 font-serif leading-relaxed italic">
               info@safashion.com <br />
-              +1 (212) 555-0123
+              01750087152
             </p>
           </div>
         </div>

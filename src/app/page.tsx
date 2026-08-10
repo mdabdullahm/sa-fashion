@@ -4,6 +4,7 @@ import CTA from "@/components/home/CTA";
 import Heritage from "@/components/home/Heritage";
 import Hero from "@/components/home/Hero";
 import Licensing from "@/components/home/Licensing";
+import ProductionFacilities from "@/components/home/ProductionFacilities";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero/>
       <Heritage/>
       <AboutSection/>
+      <ProductionFacilities/>
       <Licensing/>
       <Brands/>
       <CTA/>

@@ -17,7 +17,7 @@ const Heritage = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-7xl font-serif text-black leading-tight max-w-5xl"
           >
-            Distributing Premium Apparel <br className="hidden md:block" /> since 1992
+            Distributing Premium Apparel <br className="hidden md:block" /> since 2000
           </motion.h2>
 
           <motion.p 
@@ -26,8 +26,7 @@ const Heritage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-8 text-lg md:text-2xl text-gray-700 font-serif leading-relaxed max-w-4xl italic"
           >
-            Sa Fashion International remains dedicated to crafting opportunities that inspire, 
-            innovate, drive trends, and celebrate the richness of global fashion.
+            SA FASHION BD is a trusted textile sourcing and apparel business, serving the global fashion industry since 2015
           </motion.p>
         </div>
 
