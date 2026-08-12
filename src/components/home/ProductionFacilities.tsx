@@ -5,16 +5,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ProductionFacilities = () => {
-  // Aukotex ইন্সপিরেশনে ৮টি প্রোডাকশন ফ্যাসিলিটি
+  // Aukotex 
   const facilities = [
-    { title: "Knitting", img: "https://images.pexels.com/photos/5943890/pexels-photo-5943890.jpeg" },
-    { title: "Dyeing", img: "https://images.pexels.com/photos/4505452/pexels-photo-4505452.jpeg" },
-    { title: "Cutting", img: "https://images.pexels.com/photos/3965548/pexels-photo-3965548.jpeg" },
-    { title: "Printing", img: "https://images.pexels.com/photos/3854816/pexels-photo-3854816.jpeg" },
-    { title: "Embroidery", img: "https://images.pexels.com/photos/5691866/pexels-photo-5691866.jpeg" },
-    { title: "Sewing", img: "https://images.pexels.com/photos/4614233/pexels-photo-4614233.jpeg" },
-    { title: "Washing", img: "https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg" },
-    { title: "Finishing", img: "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg" },
+    { title: "Knitting", img: "https://i.ibb.co.com/cmzyvK6/photo-2026-08-12-10-13-55.jpg" },
+    { title: "Dyeing", img: "https://i.ibb.co.com/nM9ckgD3/photo-2026-08-12-10-13-51.jpg" },
+    { title: "Cutting", img: "https://i.ibb.co.com/1JPgXhRG/photo-2026-08-12-10-13-46.jpg" },
+    { title: "Printing", img: "https://i.ibb.co.com/5gN1L2yY/photo-2026-08-12-10-13-42.jpg" },
+    { title: "Embroidery", img: "https://i.ibb.co.com/spc7gHGg/photo-2026-08-12-10-13-38.jpg" },
+    { title: "Sewing", img: "https://i.ibb.co.com/2YCsmVH5/photo-2026-08-12-10-13-24.jpg" },
+    { title: "Washing", img: "https://i.ibb.co.com/0pMnckTS/photo-2026-08-12-10-13-34.jpg" },
+    { title: "Finishing", img: "https://i.ibb.co.com/DH9BC9KY/photo-2026-08-12-10-13-30.jpg" },
   ];
 
   return (

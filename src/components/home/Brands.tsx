@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 const Brands = () => {
   // ২০টি আলাদা লোগোর ডাটা
   const brandsData = [
-    { id: 1, logo: "https://i.ibb.co.com/tT22YX39/zara-logo-png-seeklogo-155775-removebg-preview.png" },
-    { id: 2, logo: "https://i.ibb.co.com/PsHrYWsf/celio-furniture-logo-png-seeklogo-388093-removebg-preview.png" },
-    { id: 3, logo: "https://i.ibb.co.com/GvsVV7cH/download-removebg-preview.png" },
-    { id: 4, logo: "https://i.ibb.co.com/FkNJSqfT/image-260nw-2054160158-removebg-preview.png" },
-    { id: 5, logo: "https://i.ibb.co.com/xbZ32Ct/karren-dornbirner-seilbahn-ges-m-b-h-logo-png-seeklogo-77401-removebg-preview.png" },
-    { id: 6, logo: "https://i.ibb.co.com/JRhsjSgn/montana-cans-germany-logo-png-seeklogo-94528-removebg-preview.png" },
-    { id: 7, logo: "https://i.ibb.co.com/XZG5FH36/orrefors-sweden-logo-png-seeklogo-104269-removebg-preview-removebg-preview.png" },
-    { id: 8, logo: "https://i.ibb.co.com/1fCRLPMX/oshkosh-bgosh-logo-png-seeklogo-321825-removebg-preview.png" },
-    { id: 9, logo: "https://i.ibb.co.com/nMTY4x9m/ostin-logo-png-seeklogo-322871-removebg-preview.png" },
-    { id: 10, logo: "https://i.ibb.co.com/LzdD920z/pickwick-records-ukusa-logo-png-seeklogo-386797-removebg-preview.png" },
-    { id: 11, logo: "https://i.ibb.co.com/PvvRmZ3q/ross-logo-png-seeklogo-119849-removebg-preview.png" },
-    { id: 12, logo: "https://i.ibb.co.com/hxJjBYNV/tcp-logo-png-seeklogo-443636-removebg-preview.png" },
-    { id: 13, logo: "https://i.ibb.co.com/Zp3w4rJ2/uks-logo-png-seeklogo-259633-removebg-preview.png" },
+    { id: 1, logo: "https://i.ibb.co.com/RT6XzF0x/Untitled-1-removebg-preview-1.png" },
+    { id: 2, logo: "https://i.ibb.co.com/N298hnn3/oshkosh-bgosh-logo-png-seeklogo-321825.png" },
+    { id: 3, logo: "https://i.ibb.co.com/JFG8f17P/Chat-GPT-Image-Aug-11-2026-09-27-34-AM.png" },
+    { id: 4, logo: "https://i.ibb.co.com/PvvRmZ3q/ross-logo-png-seeklogo-119849-removebg-preview.png" },
+    { id: 5, logo: "https://i.ibb.co.com/bMqCsf1x/Chat-GPT-Image-Aug-11-2026-09-54-34-AM.png" },
+    { id: 6, logo: "https://i.ibb.co.com/whd0jtc0/Chat-GPT-Image-Aug-11-2026-09-57-36-AM.png" },
+    { id: 7, logo: "https://i.ibb.co.com/7d6wmCh7/Chat-GPT-Image-Aug-11-2026-12-06-27-PM.png" },
+    { id: 8, logo: "https://i.ibb.co.com/jkjB7NRQ/llldownload.png" },
+    { id: 9, logo: "https://i.ibb.co.com/Q7smsvZ6/images-removebg-preview.png" },
+    { id: 10, logo: "https://i.ibb.co.com/JRZcvGn1/images-removebg-preview.png" },
+    { id: 11, logo: "https://i.ibb.co.com/hx0QwxKq/download-removebg-preview.png" },
+    { id: 12, logo: "https://i.ibb.co.com/XGQD416/images-removebg-preview.png" },
+    { id: 13, logo: "https://i.ibb.co.com/HfDqjQgp/download-removebg-preview.png" },
   ];
 
   // নিরবিচ্ছিন্ন লুপের জন্য লোগো ডাবল করা হয়েছে
