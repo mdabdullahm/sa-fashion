@@ -11,7 +11,7 @@ const CategoryList = () => {
       name: "Children/Wear", 
       img: "https://i.ibb.co.com/q6dcjdB/pexels-artempodrez-6786666-removebg-preview.png" },
     { id: 2, brand: "oshkosh-usa", 
-      name: "Slim Fit Denim", 
+      name: "T-shirt", 
       img: "https://i.ibb.co.com/W4F3bZ2w/download-1-removebg-preview.png" },
     { id: 3, brand: "tcp-usa", 
       name: "Sweat Shirts/Hoodies", 

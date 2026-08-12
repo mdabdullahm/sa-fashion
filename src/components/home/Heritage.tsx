@@ -39,7 +39,7 @@ const Heritage = () => {
         >
           <Image
             // ভিডিওর মতো ম্যানহাটন ব্রিজের সিনেমাটিক ছবি
-            src="https://i.ibb.co.com/3ykqkTVs/perplexed-lady-model-short-blue-dress-hat-barfoot-white.jpg" 
+            src="https://i.ibb.co.com/YFCVg03h/Models-wearing-black-ruched-tops-202608010024.jpg" 
             alt="Manhattan Distributing Heritage"
             fill
             className="object-cover  hover:grayscale-0 transition-all duration-1000 cursor-pointer"

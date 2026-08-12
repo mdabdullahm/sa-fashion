@@ -7,10 +7,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const AboutSection = () => {
   const sliderImages = [
-    "https://i.ibb.co.com/Cs6xzFK5/Chat-GPT-Image-Aug-9-2026-11-56-36-PM.png",
-    "https://i.ibb.co.com/1BwGVn5/edoardo-cuoghi-25-QSc-KLWJKE-unsplash.jpg",
-    "https://i.ibb.co.com/7tqSktd2/Chat-GPT-Image-Aug-9-2026-11-52-19-PM.png",
-    "https://i.ibb.co.com/mr3DR65V/freestocks-3-Q3ts-J01nc-unsplash.jpg",
+    "https://i.ibb.co.com/Dfq8wMZs/Models-posing-back-to-back-chair-202608010024.jpg",
+    "https://i.ibb.co.com/HD39cBcn/Young-woman-posing-studio-portrait-202608010033.jpg",
+    "https://i.ibb.co.com/fPPtC1Q/Male-model-wearing-t-shirt-bandana-202608010024.jpg",
+    "https://i.ibb.co.com/SXxTbFNP/Models-sitting-outdoors-white-wall-202608010024.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
