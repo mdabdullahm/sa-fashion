@@ -7,34 +7,34 @@ import { motion } from "framer-motion";
 const CategoryList = () => {
   // ২০টি ব্র্যান্ডের অধীনে ৪০টি ক্যাটাগরির ডাটা
   const categories = [
-    { id: 1, brand: "P.V.H-U.S.A", 
+    { id: 1, 
       name: "Children/Wear", 
       img: "https://i.ibb.co.com/q6dcjdB/pexels-artempodrez-6786666-removebg-preview.png" },
-    { id: 2, brand: "oshkosh-usa", 
+    { id: 2, 
       name: "T-shirt", 
       img: "https://i.ibb.co.com/W4F3bZ2w/download-1-removebg-preview.png" },
-    { id: 3, brand: "tcp-usa", 
+    { id: 3,  
       name: "Sweat Shirts/Hoodies", 
       img: "https://i.ibb.co.com/m5PpWQBm/sweat-shirt-capuche-d-contract-manches-longues-et-paules-tombantes-de-couleur-unie-pour-hommes.png" },
-    { id: 4, brand: "ross-usa", 
+    { id: 4,  
       name: "Tank Top", 
       img: "https://i.ibb.co.com/WpF6BjPC/Black-Cami-Tank-Top-Cotton-Blend-Basic-removebg-preview.png" },
-    { id: 5, brand: "c&a-gemmany", 
+    { id: 5,  
       name: "Performance Leggings", 
       img: "https://i.ibb.co.com/rY171mB/The-Under-100-Items-on-Our-Shopping-Wish-List-removebg-preview.png" },
-    { id: 6, brand: "h&m-sweden", 
+    { id: 6,  
       name: "Cotton Rompers", 
       img: "https://i.ibb.co.com/35sb5q2P/removebg-preview.png" },
-    { id: 7, brand: "george", 
+    { id: 7, 
       name: "Trouser/Skirt", 
       img: "https://i.ibb.co.com/d4fxztR9/download-removebg-preview.png" },
-    { id: 8, brand: "sainsbury-uk", 
+    { id: 8,  
       name: "Active Wear", 
       img: "https://i.ibb.co.com/wZkwyvfp/image.png" },
-    { id: 9, brand: "zara-spain", 
+    { id: 9,  
       name: "Boxer/Innerwear", 
       img: "https://i.ibb.co.com/60HSNFhC/David-Beckham-for-H-Underwear-removebg-preview.png" },
-    { id: 10, brand: "o'stin-russia", 
+    { id: 10,  
       name: "Light Woven", 
       img: "https://i.ibb.co.com/Tx1LNwV4/The-Palazzo-Trouser-S-Stone-Marle-removebg-preview.png" },
   ];
@@ -84,9 +84,6 @@ const CategoryList = () => {
                 <h3 className="text-sm font-bold uppercase tracking-widest text-black group-hover:text-neutral-500 transition-colors">
                   {item.name}
                 </h3>
-                <p className="text-[10px] uppercase tracking-widest text-gray-400">
-                  {item.brand}
-                </p>
               </div>
             </motion.div>
           ))}

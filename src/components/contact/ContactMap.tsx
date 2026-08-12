@@ -6,7 +6,7 @@ import { MapPin } from "lucide-react";
 
 const ContactMap = () => {
   // আপনার অফিসের লোকেশন (Google Maps থেকে Embed Link নিতে পারবেন)
-  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280821873!2d-74.1197637397447!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd";
+  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.4993001205!2d90.25487162624671!3d23.781067240173673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1786517498735!5m2!1sen!2sbd";
 
   return (
     <section className="w-full bg-white pb-20">
