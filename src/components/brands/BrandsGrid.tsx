@@ -12,7 +12,7 @@ const BrandsGrid = () => {
     { id: 2, name: "oshkosh-usa", 
       logo: "https://i.ibb.co.com/N298hnn3/oshkosh-bgosh-logo-png-seeklogo-321825.png" },
     { id: 3, name: "tcp-usa", 
-      logo: "https://i.ibb.co.com/JFG8f17P/Chat-GPT-Image-Aug-11-2026-09-27-34-AM.png" },
+      logo: "/brandlogo/tcp-usa.png" },
     { id: 4, name: "ross-usa", 
       logo: "https://i.ibb.co.com/PvvRmZ3q/ross-logo-png-seeklogo-119849-removebg-preview.png" },
     { id: 5, name: "c&a-gemmany", 
