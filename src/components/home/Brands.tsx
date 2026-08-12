@@ -9,7 +9,7 @@ const Brands = () => {
   const brandsData = [
     { id: 1, logo: "https://i.ibb.co.com/RT6XzF0x/Untitled-1-removebg-preview-1.png" },
     { id: 2, logo: "https://i.ibb.co.com/N298hnn3/oshkosh-bgosh-logo-png-seeklogo-321825.png" },
-    { id: 3, logo: "https://i.ibb.co.com/JFG8f17P/Chat-GPT-Image-Aug-11-2026-09-27-34-AM.png" },
+    { id: 3, logo: "https://i.ibb.co.com/N298hnn3/oshkosh-bgosh-logo-png-seeklogo-321825.png" },
     { id: 4, logo: "https://i.ibb.co.com/PvvRmZ3q/ross-logo-png-seeklogo-119849-removebg-preview.png" },
     { id: 5, logo: "https://i.ibb.co.com/bMqCsf1x/Chat-GPT-Image-Aug-11-2026-09-54-34-AM.png" },
     { id: 6, logo: "https://i.ibb.co.com/whd0jtc0/Chat-GPT-Image-Aug-11-2026-09-57-36-AM.png" },
